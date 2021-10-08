@@ -1,0 +1,19 @@
+{
+  "name": "lesson2",
+  "version": "1.0.0",
+  "description": "home work lesson2",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Art3mk4/lesson2.git"
+  },
+  "author": "Art3mk4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Art3mk4/lesson2/issues"
+  },
+  "homepage": "https://github.com/Art3mk4/lesson2#readme"
+}
