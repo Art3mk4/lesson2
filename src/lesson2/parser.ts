@@ -1,9 +1,9 @@
-import { isNumber, isUnaryOperator, isBinaryOperator } from "./helpers";
+import { isNumber, isUnaryOperator, isBinaryOperator } from './helpers';
 
 export type ParsedLineType = (number | string)[];
 
 export const parser = (line: string): ParsedLineType | null => {
-  const stack = line.split(" ");
+  const stack = line.split(' ');
 
   return stack.reduce<ParsedLineType>((result, item, key) => {
     const prevItem = stack[key - 1];
@@ -22,7 +22,7 @@ export const parser = (line: string): ParsedLineType | null => {
     } else if (isValidOperatorPush) {
       result.push(item);
     } else {
-      throw new TypeError("Unexpected string");
+      throw new TypeError('Unexpected string');
     }
     return result;
   }, []);

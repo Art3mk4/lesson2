@@ -42,26 +42,26 @@ export const fact: UnaryScalarOperationType = (first: number): number => {
 };
 
 export const mathOperators: { [key: string]: ScalarOperationType } = {
-  "*": mul,
-  "/": div,
-  "+": add,
-  "-": minus,
-  "**": exponentiation,
-  "^": pow,
-  "!": fact,
+  '*': mul,
+  '/': div,
+  '+': add,
+  '-': minus,
+  '**': exponentiation,
+  '^': pow,
+  '!': fact,
 };
 
 export const binaryMathOperators: { [key: string]: ScalarOperationType } = {
-  "*": mul,
-  "/": div,
-  "+": add,
-  "-": minus,
-  "^": pow,
+  '*': mul,
+  '/': div,
+  '+': add,
+  '-': minus,
+  '^': pow,
 };
 
 export const unaryMathOperators: { [key: string]: UnaryScalarOperationType } = {
-  "**": exponentiation,
-  "!": fact,
+  '**': exponentiation,
+  '!': fact,
 };
 
 export const mathPriorities: number[] = [1, 2];
@@ -69,11 +69,11 @@ export const mathPriorities: number[] = [1, 2];
 const [FIRST, SECOND] = mathPriorities;
 
 export const mathOperatorsPriorities: { [key: string]: number } = {
-  "*": FIRST,
-  "/": FIRST,
-  "**": FIRST,
-  "^": FIRST,
-  "!": FIRST,
-  "+": SECOND,
-  "-": SECOND,
+  '*': FIRST,
+  '/': FIRST,
+  '**': FIRST,
+  '^': FIRST,
+  '!': FIRST,
+  '+': SECOND,
+  '-': SECOND,
 };
