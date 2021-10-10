@@ -41,19 +41,13 @@ describe("mathOperators test cases", () => {
     expect(pow(5, 3)).toBe(125);
   });
 
-  if (
-    ("5 ! to equal 120",
-    () => {
-      expect(fact(5)).toBe(120);
-    })
-  );
+  it("5 ! to equal 120", () => {
+    expect(fact(5)).toBe(120);
+  });
 
-  if (
-    ("1 ! to equal 1",
-    () => {
-      expect(fact(1)).toBe(1);
-    })
-  );
+  it("1 ! to equal 1", () => {
+    expect(fact(1)).toBe(1);
+  });
 
   it("add 4 + 2 to equal 6", () => {
     expect(add(4, 2)).toBe(6);

@@ -13,26 +13,13 @@ describe("Parser correct cases", () => {
     expect(parser("1 + 32 - 2 + 2")).toEqual([1, "+", 32, "-", 2, "+", 2]);
   });
 
-  if (
-    ("2 ** 2 + 4",
-    () => {
-      expect(parser("2 ** 2 + 4")).toEqual([2, "**", 2, "+", 4]);
-    })
-  );
+  it("2 ** 2 + 4", () => {
+    expect(parser("2 ** 2 + 4")).toEqual([2, "**", 2, "+", 4]);
+  });
 
-  if (
-    ("2 ^ 5 + 3",
-    () => {
-      expect(parser("2 ^ 5 + 3")).toEqual([2, "^", 5, "+", 3]);
-    })
-  );
-
-  if (
-    ("3 !",
-    () => {
-      expect(parser(3!)).toEqual([3, "!"]);
-    })
-  );
+  it("2 ^ 5 + 3", () => {
+    expect(parser("2 ^ 5 + 3")).toEqual([2, "^", 5, "+", 3]);
+  });
 });
 
 describe("Parser invalid cases", () => {
